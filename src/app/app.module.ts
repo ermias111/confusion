@@ -12,6 +12,7 @@ import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { DishService } from '../app/services/dish.service';
+import { LeaderService } from '../app/services/leader.service';
 import { PromotionService } from '../app/services/promotion.service';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -47,7 +48,8 @@ import { MenuComponent } from './menu/menu.component';
   ],
   providers: [
     DishService,
-    PromotionService
+    PromotionService,
+    LeaderService
   ],
   bootstrap: [AppComponent]
 })
