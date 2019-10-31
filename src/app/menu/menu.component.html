@@ -8,6 +8,9 @@
       <hr>
     </div>
   </div>
+  <div fxFlex [hidden] = "dishes">
+    <mat-spinner> </mat-spinner><span>...Loading</span>
+  </div>
 
   <div fxFlex>
     <mat-grid-list cols="2" rowHeight="200px">
