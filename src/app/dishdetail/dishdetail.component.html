@@ -8,7 +8,7 @@
 
     
     
-    <div fxFlex="40" *ngIf = "dish">
+    <div fxFlex="40" *ngIf = "dish" [@visibility] = "visibility">
         <mat-card>
             <mat-card-header>
               <mat-card-title>
@@ -30,7 +30,7 @@
           </mat-card>
     </div>
 
-    <div fxFlex="40" *ngIf="dish">
+    <div fxFlex="40" *ngIf="dish" [@visibility] = "visibility">
         <mat-list cols="1" rowHeight="100px">
             <h3>Comments</h3>
             <mat-list-item *ngFor="let com of dish.comments">
